@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<style>
+    /* Hide the dropdown content by default */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: orangered;
+        min-width: 160px;
+        z-index: 1;
+    }
+
+    /* Show dropdown when hovering over a filter item */
+    .filter-item:hover .dropdown-content {
+        display: block;
+    }
+
+    /* Optional: style the dropdown content for better visibility */
+    .dropdown-content li {
+        padding: 12px 16px;
+        text-align: left;
+    }
+
+    .dropdown-content li:hover {
+        background-color: black;
+    }
+</style>
+<body>
+    <header>
+        <nav style="display: flex; align-items: center; justify-content: space-between; padding: 10px 20px; background-color: #f8f9fa;">
+            <!-- Logo -->
+            <img src="images/job-vacancy-background-flat-style_23-2147871759.jpg" alt="logo" 
+                 style="width: 130px; height: 130px; object-fit: cover; border-radius: 70%;">
+        
+            <!-- Navigation Links -->
+            <ul style="display: flex; gap: 20px; list-style: none; padding-left: 10px;padding-bottom: 0px; margin: 0; align-items: center;">
+                <li><a href="/home.html" style="text-decoration: none; color: black;">Home</a></li>
+                <li><a href="/jobs.html" style="text-decoration: none; color: black;">Jobs</a></li>
+                <li><a href="/apply.html" style="text-decoration: none; color: black;">Apply Now</a></li>
+                <li><a href="/helpcentre.html" style="text-decoration: none; color: black;">Help Centre</a></li>
+            </ul>
+            <div style="display: flex; gap: 10px; padding-bottom: 0px;">
+                <button onclick="window.location.href='signup.html'" 
+                    style="padding: 10px 15px; background-color: white; color: black; border-color: #2b2b2b; border-radius: 5px; cursor: pointer;">
+                    Sign Up
+                </button>
+            
+                <button onclick="window.location.href='login.html'" 
+                    style="padding: 10px 15px; background-color: white; color: black; border-color: #2b2b2b; border-radius: 5px; cursor: pointer;">
+                    Log In
+                </button>
+            
+             
+            </div>
+        
+        </nav>
+        
+</header>
+<h3 style="font-weight: normal; text-align: center; ">Shine in your first 90 days by collaborating effectively with any colleague.  <a href="#" class="start-now">Start Now!</a>
+</h3>
+<div class="dropdown" style="background-color: orangered; color: white; padding: 20px;margin-bottom: 0px;">
+    <h1 style="text-align: center; padding-right: 500px;padding-left: 500px;">Explore and discover the right job for you!</h1>
+    <div class="filter-container">
+        <ul class="filter-list" style="display: grid; grid-template-columns: repeat(5, auto); gap: 20px; list-style-type: none;">
+            <li class="filter-item">
+                <button class="dropbtn">Any Job Function</button>
+                <span class="dropdown-toggle" data-target="job-function">▼</span>
+                <ul class="dropdown-content" id="job-function">
+                    <li>Engineering</li>
+                    <li>Marketing</li>
+                    <li>Finance</li>
+                    <li>HR</li>
+                </ul>
+            </li>
+            <li class="filter-item">
+                <button class="dropbtn">Any Industries</button>
+                <span class="dropdown-toggle" data-target="industries">▼</span>
+                <ul class="dropdown-content" id="industries">
+                    <li>Technology</li>
+                    <li>Healthcare</li>
+                    <li>Education</li>
+                    <li>Finance</li>
+                </ul>
+            </li>
+            <li class="filter-item">
+                <button class="dropbtn">Any Locations</button>
+                <span class="dropdown-toggle" data-target="locations">▼</span>
+                <ul class="dropdown-content" id="locations">
+                    <li>New York</li>
+                    <li>Los Angeles</li>
+                    <li>Chicago</li>
+                    <li>Miami</li>
+                </ul>
+            </li>
+            <li class="filter-item">
+                <button class="dropbtn">Any Experience Levels</button>
+                <span class="dropdown-toggle" data-target="experience">▼</span>
+                <ul class="dropdown-content" id="experience">
+                    <li>Entry Level</li>
+                    <li>Mid Level</li>
+                    <li>Senior Level</li>
+                    <li>Executive</li>
+                </ul>
+            </li>
+            <li>
+                <button class="dropbtn">Find A Job</button>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- CSS for hover behavior -->
+
+
+
+
+<h1 style="text-align: center; font-family: 'Times New Roman', Times, serif; color: #2b2b2b;">Find the right job vacancies in Kenya</h1>
+<h1 style="padding-left: 80px;font-family: 'Times New Roman', Times, serif;">Experience-based filtering.</h1>
+<h3 style="color: grey; padding-left: 80px;">Find jobs that suit your experience level</h3>
+<div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+    <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); text-align: center; width: 200px;">
+        <h4>Mid level</h4>
+        <p>368 Jobs</p>
+        <a href="Explore Jobs" style="text-decoration: none; color: blue; font-weight: bold; font-size: 18px;">
+            Explore Jobs <span style="display: inline-block; font-size: 30px; color: blue;">→</span>
+        </a>
+    </div>
+    <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); text-align: center; width: 200px;">
+        <h4>Entry level</h4>
+        <p>150 Jobs</p>
+        <a href="Explore Jobs" style="text-decoration: none; color: blue; font-weight: bold; font-size: 18px;">
+            Explore Jobs <span style="display: inline-block; font-size: 30px; color: blue;">→</span>
+        </a>
+    </div>
+    <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); text-align: center; width: 200px;">
+        <h4>Internship & Graduate</h4>
+        <p>23 Jobs</p>
+        <a href="Explore Jobs" style="text-decoration: none; color: blue; font-weight: bold; font-size: 18px;">
+            Explore Jobs <span style="display: inline-block; font-size: 30px; color: blue;">→</span>
+        </a>
+    </div>
+    <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); text-align: center; width: 200px;">
+        <h4>No Experience</h4>
+        <p>13 Jobs</p>
+        <a href="Explore Jobs" style="text-decoration: none; color: blue; font-weight: bold; font-size: 18px;">
+            Explore Jobs <span style="display: inline-block; font-size: 30px; color: blue;">→</span>
+        </a>
+    </div>
+    <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); text-align: center; width: 200px;">
+        <h4>Senior level</h4>
+        <p>48 Jobs</p>
+        <a href="Explore Jobs" style="text-decoration: none; color: blue; font-weight: bold; font-size: 18px;">
+            Explore Jobs <span style="display: inline-block; font-size: 30px; color: blue;">→</span>
+        </a>
+    </div>
+</div>
+
+<div class="button-container" style="text-align: center;padding-top: 50px;font-family: Georgia, 'Times New Roman', Times, serif;">
+   <button class="explore-btn" style="background-color: maroon; color: white; padding: 10px 20px; margin: 10px; border-radius: 10px;">
+    Explore All Jobs
+</button>
+  </div>
+  <img src="images/image.png" alt="centred image" style="display: block; padding-left: 300px; padding-top: 50px;">
+ <!-- Additional job listings can be added here -->
+
+<h1 style="text-align: center;padding-top: 50px; padding-bottom: 50px;font-family: 'Times New Roman', Times, serif;">companies currently hiring in kenya</h1>
+<div style="display: flex; padding-left: 400px; gap: 20px;">
+    <img src="images/image copy.png" alt="" style="height: 100px; width: 100px; margin-right: 20px;">
+    <img src="images/image copy 2.png" alt="" style="height: 100px; width: 100px; margin-right: 20px;">
+    <img src="images/image copy 3.png" alt="image" style="height: 100px; width: 100px; margin-right: 20px;">
+    <img src="images/image copy 4.png" alt="" style="height: 100px; width: 100px;">
+</div>
+<button style="background-color: #fff9c4; /* Light Yellow */
+               border: none;
+               padding: 12px 24px;
+             margin-left: 600px;
+             margin-bottom: 50px;
+             margin-top: 50px;
+               border-radius: 10px; /* Smooth Corners */
+               font-size: 16px;
+               font-weight: bold;
+               color: #333;
+               box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+               cursor: pointer;">
+    View all companies hiring
+</button>
+<section style="background-color: indigo; color: white; padding: 60px 50px;">
+    <!-- Heading and intro text with tighter spacing below -->
+    <div style="margin-bottom: 10px; padding-bottom: 10px;">
+      <h2 style="margin: 0 0 5px 0;">Advance your career with BrighterMonday</h2>
+      <p style="margin: 0;">Create a free account, complete your profile, and get matched with your dream job.</p>
+    </div>
+  
+    <!-- Grid: Text and Image -->
+    <div style="display: flex; gap: 40px; align-items: center; justify-content: space-between; flex-wrap: wrap;">
+      
+      <!-- Left Column (Text Content) -->
+      <div style="flex: 1; min-width: 300px; max-width: 600px;">
+        <div style="margin-bottom: 20px;">
+          <h4 style="margin-bottom: 8px;">Get seen by employers</h4>
+          <p style="margin: 0;">
+            With a complete profile, your applications and profile are promoted to top employers, so you stand out.
+          </p>
+        </div>
+        <div>
+          <h4 style="margin-bottom: 8px;">Access the best jobs for you</h4>
+          <p style="margin: 0;">
+            Sign up for customised job alerts matching your experience, preferred industry, function and location.
+          </p>
+        </div>
+      </div>
+  
+      <!-- Right Column (Image) -->
+      <div style="flex: 1; min-width: 300px; max-width: 600px;">
+        <img src="images/image copy 7.png" alt="Advance Your Career" style="width: 100%; height: auto; border-radius: 12px;">
+      </div>
+  
+    </div>
+  </section>
+  
+  
+
+  
+
+  <div style="display: grid; grid-template-columns: auto 2fr; gap: 10px;">
+
+    <div>
+    <img src="images/image copy 8.png" alt="img" style="padding-left: 200px; padding-top: 50px;">
+</div>
+<div>
+    <h1 style="padding-top: 100px;">Ready to level up your CV game?</h1>
+    <p style="font-size: larger;font-family: 'Times New Roman', Times, serif; padding-right: 200px;">Collaborate with a professional cv writer to highlight your skills and achievements like never before.</p>
+    <button style="background-color: maroon; color: white; padding: 12px 24px; font-size: 16px; border: none; border-radius: 8px; cursor: pointer; transition: background-color 0.3s ease-in-out;" 
+    onmouseover="this.style.backgroundColor='red'" 
+    onmouseout="this.style.backgroundColor='maroon'">
+    Upgrade My CV
+</button>
+
+    </button>
+    
+</div>
+</div>
+<div>
+    <img src="images/image copy 5.png" alt="img"style="padding-left: 400px; padding-top:50px;">
+</div>
+</div>
+    <div>
+        <h2 style="text-align: center;padding-top: 50px;">Explore jobs in Kenya by job function</h2>
+        <div class="list-container"style="display: grid; grid-template-columns: repeat(3, 1fr); gap: aria-rowspan="60px" max-width: 900px; margin: 0px; padding-left: 100px; background: white;">
+            <ul style="color: grey; column-gap: 50px;">
+                <li style="padding-bottom: 20px; ">Accounting, Auditing & Finance</li>
+                <li style="padding-bottom: 20px;">Admin & Office</li>
+                <li style="padding-bottom: 20px;">Creative & Design</li>
+                <li style="padding-bottom: 20px;">Building & Architecture</li>
+                <li style="padding-bottom: 20px;">Consulting & Strategy</li>
+                <li style="padding-bottom: 20px;">Customer Service & Support</li>
+                <li style="padding-bottom: 20px;">Engineering & Technology</li>
+<li>Farming & Agriculture</li>
+<li>Food Services & Catering</li>
+            </ul>
+            <ul style="color: grey;">
+                <li style="padding-bottom: 20px;">Hospitality & Leisure</li>
+                <li style="padding-bottom: 20px;">Software & Data</li>
+                <li style="padding-bottom: 20px;">Legal Services</li>
+                <li style="padding-bottom: 20px;">Marketing & Communications</li>
+                <li style="padding-bottom: 20px;">Medical & Pharmaceutical</li>
+                <li style="padding-bottom: 20px;">Product & Project Management</li>
+                <li style="padding-bottom: 20px;">Estate Agents & Property Management</li>
+                <li style="padding-bottom: 20px;">Quality Control & Assurance</li>
+                <li style="padding-bottom: 20px;">Human Resources</li>
+            </ul>
+            <ul style="color: grey;">
+                <li style="padding-bottom: 20px;">Management & Business Development</li>
+                <li style="padding-bottom: 20px;">Community & Social Services</li>
+                <li style="padding-bottom: 20px;">Supply Chain & Procurement</li>
+                <li style="padding-bottom: 20px;">Sales</li>
+                <li style="padding-bottom: 20px;">Research, Teaching & Training</li>
+                <li style="padding-bottom: 20px;">Trades & Services</li>
+                <li style="padding-bottom: 20px;">Driver & Transport Services</li>
+                <li style="padding-bottom: 20px;">Health & Safety</li>
+            </ul>
+        </div>
+    </div>    
+    <footer style="background-color: darkslateblue; padding: 20px 20px; color: white; text-align: center;">
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
+          
+          <!-- First Column: Stay Tuned -->
+          <div>
+            <p style="font-size: 16px; font-weight: bold;">Stay tuned on our job advertisements</p>
+            <img src="images/image copy 6.png" alt="poto" style="height: 100px; width: 100px;">
+          </div>
+          
+          <!-- Second Column: Copyright -->
+          <div style="margin-top: 100px;">
+            <p>&copy; 2025 Job Portal. All rights reserved.</p>
+          </div>
+          
+          <!-- Third Column: Social Media -->
+          <div>
+            <p style="font-size: 16px; font-weight: bold;">Get us on</p>
+            <div class="social-icons">
+                <!-- Twitter -->
+                <a href="https://twitter.com/yourprofile" target="_blank" class="icon twitter" aria-label="Twitter">
+                  <svg viewBox="0 0 24 24" fill="#1DA1F2" width="24" height="24">
+                    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43.36a9.09 9.09 0 0 1-2.83 1.08 4.52 4.52 0 0 0-7.69 4.13A12.82 12.82 0 0 1 3.15 2.2a4.51 4.51 0 0 0 1.4 6 4.48 4.48 0 0 1-2.05-.57v.06a4.51 4.51 0 0 0 3.63 4.42 4.48 4.48 0 0 1-2.04.08 4.52 4.52 0 0 0 4.22 3.13A9.05 9.05 0 0 1 2 19.54a12.78 12.78 0 0 0 6.92 2.03c8.3 0 12.85-6.86 12.85-12.81 0-.2 0-.42-.02-.63A9.23 9.23 0 0 0 23 3z"/>
+                  </svg>
+                </a>
+              
+                <!-- Google -->
+                <a href="https://google.com" target="_blank" class="icon google" aria-label="Google">
+                  <svg viewBox="0 0 48 48" width="24" height="24">
+                    <path fill="#4285F4" d="M44.5 20H24v8.5h11.8C34.7 33.2 30 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.9 1.2 8 3.1l6-6C34.2 5.6 29.4 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20c11.6 0 19.5-8.1 19.5-19.5 0-1.3-.1-2.2-.3-3.5z"/>
+                  </svg>
+                </a>
+              
+                <!-- Instagram -->
+                <a href="https://instagram.com/yourprofile" target="_blank" class="icon instagram" aria-label="Instagram">
+                  <svg viewBox="0 0 448 512" width="24" height="24">
+                    <defs>
+                      <linearGradient id="insta-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#feda75"/>
+                        <stop offset="25%" stop-color="#fa7e1e"/>
+                        <stop offset="50%" stop-color="#d62976"/>
+                        <stop offset="75%" stop-color="#962fbf"/>
+                        <stop offset="100%" stop-color="#4f5bd5"/>
+                      </linearGradient>
+                    </defs>
+                    <path fill="url(#insta-gradient)" d="M224 202a53 53 0 1 0 0 106 53 53 0 1 0 0-106zm124-41a26 26 0 1 0 0-52 26 26 0 1 0 0 52zM398.8 80c-17.5-17.5-41-27.2-65.8-27.2H115c-24.8 0-48.3 9.7-65.8 27.2S22 121.2 22 146v220c0 24.8 9.7 48.3 27.2 65.8S90.2 459 115 459h218c24.8 0 48.3-9.7 65.8-27.2S426 390.8 426 366V146c0-24.8-9.7-48.3-27.2-65.8zM224 338a114 114 0 1 1 0-228 114 114 0 1 1 0 228z"/>
+                  </svg>
+                </a>
+              </div>
+            
+              
+          </div>
+          
+        </div>
+      </footer>
+      
+      <!-- Add the font-awesome icons link for social media -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      
+    <script src="scripts.js"></script>
+</body>
+</html>

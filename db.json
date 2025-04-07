@@ -1,0 +1,58 @@
+{
+  "jobs": [
+    {
+      "id": "4",
+      "title": "Marketing Specialist",
+      "company": "Creative Marketing Solutions",
+      "location": "Kisumu, Kenya",
+      "deadline": "2025-05-05",
+      "description": "Develop marketing strategies and campaigns.",
+      "status": "active"
+    },
+    {
+      "id": "6",
+      "title": "Product Designer",
+      "company": "Tech Innovations Ltd.",
+      "location": "Nairobi, Kenya",
+      "deadline": "2025-06-10",
+      "description": "Design product prototypes and user interfaces.",
+      "status": "active"
+    },
+    {
+      "id": "7",
+      "title": "Business Development Manager",
+      "company": "Growth Enterprises",
+      "location": "Mombasa, Kenya",
+      "deadline": "2025-05-30",
+      "description": "Identify new business opportunities and partnerships.",
+      "status": "active"
+    },
+    {
+      "id": "8",
+      "title": "Software Developer Intern",
+      "company": "CodeMasters Ltd.",
+      "location": "Nairobi, Kenya",
+      "deadline": "2025-04-15",
+      "description": "Assist in developing and testing software applications.",
+      "status": "active"
+    },
+    {
+      "id": "92f2",
+      "title": "Software Engineer",
+      "company": "Tech Innovations Ltd.",
+      "location": "Nairobi, Kenya",
+      "deadline": "2027-03-06",
+      "description": "i am software engineer by professional",
+      "status": "active"
+    },
+    {
+      "id": "8c4b",
+      "title": "Software Engineer",
+      "company": "Tech Innovations Ltd.",
+      "location": "Nairobi, Kenya",
+      "deadline": "2025-04-02",
+      "description": "eeee",
+      "status": "active"
+    }
+  ]
+}
