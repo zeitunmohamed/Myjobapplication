@@ -10,15 +10,6 @@
       "status": "active"
     },
     {
-      "id": "6",
-      "title": "Product Designer",
-      "company": "Tech Innovations Ltd.",
-      "location": "Nairobi, Kenya",
-      "deadline": "2025-06-10",
-      "description": "Design product prototypes and user interfaces.",
-      "status": "active"
-    },
-    {
       "id": "7",
       "title": "Business Development Manager",
       "company": "Growth Enterprises",
@@ -52,6 +43,15 @@
       "location": "Nairobi, Kenya",
       "deadline": "2025-04-02",
       "description": "eeee",
+      "status": "active"
+    },
+    {
+      "id": "8a94",
+      "title": "Software Engineer",
+      "company": "Tech Innovations Ltd.",
+      "location": "Nairobi, Kenya",
+      "deadline": "2025-04-01",
+      "description": "fwaes",
       "status": "active"
     }
   ]

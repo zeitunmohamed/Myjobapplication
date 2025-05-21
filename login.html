@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login | Job Portal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head><style>
+  .social-icons {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .icon {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+  }
+
+  .icon:hover {
+    transform: scale(1.15);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  }
+
+  .icon svg {
+    width: 28px;
+    height: 28px;
+  }
+</style>
+
+<body class="bg-gray-100 min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="bg-white shadow">
+    <nav class="flex items-center justify-between px-6 py-4 bg-gray-100">
+      <!-- Logo -->
+      <img src="images/job-vacancy-background-flat-style_23-2147871759.jpg" 
+           alt="logo"
+           class="w-[130px] h-[130px] object-cover rounded-full" />
+
+      <!-- Navigation Links -->
+      <ul class="flex gap-6 list-none m-0 items-center">
+        <li><a href="/home.html" class="text-black no-underline hover:underline">Home</a></li>
+        <li><a href="/jobs.html" class="text-black no-underline hover:underline">Jobs</a></li>
+        <li><a href="/apply.html" class="text-black no-underline hover:underline">Apply Now</a></li>
+        <li><a href="/helpcentre.html" class="text-black no-underline hover:underline">Help Centre</a></li>
+      </ul>
+
+      <!-- Buttons -->
+      <div class="flex gap-3">
+        <button onclick="window.location.href='signup.html'"
+                class="px-4 py-2 border border-black rounded text-black bg-white hover:bg-gray-200">
+          Sign Up
+        </button>
+        <button onclick="window.location.href='login.html'"
+                class="px-4 py-2 border border-black rounded text-black bg-white hover:bg-gray-200">
+          Log In
+        </button>
+      
+      </div>
+    </nav>
+  </header>
+  <div style="text-align: center;">
+    <h1>Log in and get productive</h1>
+    <p>Use your social account to log in.</p>
+    <div class="social-icons">
+      <!-- Twitter -->
+      <a href="https://twitter.com/yourprofile" target="_blank" class="icon twitter" aria-label="Twitter">
+        <svg viewBox="0 0 24 24" fill="#1DA1F2">
+          <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43.36a9.09 9.09 0 0 1-2.83 1.08 4.52 4.52 0 0 0-7.69 4.13A12.82 12.82 0 0 1 3.15 2.2a4.51 4.51 0 0 0 1.4 6 4.48 4.48 0 0 1-2.05-.57v.06a4.51 4.51 0 0 0 3.63 4.42 4.48 4.48 0 0 1-2.04.08 4.52 4.52 0 0 0 4.22 3.13A9.05 9.05 0 0 1 2 19.54a12.78 12.78 0 0 0 6.92 2.03c8.3 0 12.85-6.86 12.85-12.81 0-.2 0-.42-.02-.63A9.23 9.23 0 0 0 23 3z"/>
+        </svg>
+      </a>
+    
+      <!-- Google -->
+      <a href="https://google.com" target="_blank" class="icon google" aria-label="Google">
+        <svg viewBox="0 0 48 48" width="24" height="24">
+          <path fill="#4285F4" d="M44.5 20H24v8.5h11.8C34.7 33.2 30 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.9 1.2 8 3.1l6-6C34.2 5.6 29.4 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20c11.6 0 19.5-8.1 19.5-19.5 0-1.3-.1-2.2-.3-3.5z"/>
+        </svg>
+      </a>
+    
+      <!-- Instagram -->
+      <a href="https://instagram.com/yourprofile" target="_blank" class="icon instagram" aria-label="Instagram">
+        <svg viewBox="0 0 448 512" width="24" height="24">
+          <defs>
+            <linearGradient id="insta-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#feda75"/>
+              <stop offset="25%" stop-color="#fa7e1e"/>
+              <stop offset="50%" stop-color="#d62976"/>
+              <stop offset="75%" stop-color="#962fbf"/>
+              <stop offset="100%" stop-color="#4f5bd5"/>
+            </linearGradient>
+          </defs>
+          <path fill="url(#insta-gradient)" d="M224 202a53 53 0 1 0 0 106 53 53 0 1 0 0-106zm124-41a26 26 0 1 0 0-52 26 26 0 1 0 0 52zM398.8 80c-17.5-17.5-41-27.2-65.8-27.2H115c-24.8 0-48.3 9.7-65.8 27.2S22 121.2 22 146v220c0 24.8 9.7 48.3 27.2 65.8S90.2 459 115 459h218c24.8 0 48.3-9.7 65.8-27.2S426 390.8 426 366V146c0-24.8-9.7-48.3-27.2-65.8zM224 338a114 114 0 1 1 0-228 114 114 0 1 1 0 228z"/>
+        </svg>
+      </a>
+    </div>
+    
+
+    
+  </div>
+
+  <!-- Login Form Section -->
+   <div style="display: flex;grid: 2fr;align-items: center; padding-left: 400px;">
+    <div>
+        <img src="images/signin-image.webp" alt="" style="width: 400px; height: auto;">
+    </div>
+    <div>
+  <main class="flex-grow flex items-center justify-center p-4">
+    <div class="bg-white p-8 rounded-2xl shadow-lg w-full max-w-md">
+      <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">Welcome Back</h2>
+      <form action="#" method="POST" class="space-y-5">
+        <div>
+          <label for="email" class="block text-sm font-medium text-gray-700">Email address</label>
+          <input type="email" id="email" name="email" required
+                 class="mt-1 w-full px-4 py-2 border rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500" />
+        </div>
+
+        <div>
+          <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+          <input type="password" id="password" name="password" required
+                 class="mt-1 w-full px-4 py-2 border rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500" />
+        </div>
+
+        <div class="flex items-center justify-between">
+          <label class="flex items-center space-x-2">
+            <input type="checkbox" class="h-4 w-4 text-blue-600 rounded" />
+            <span class="text-sm text-gray-600">Remember me</span>
+          </label>
+          <a href="#" class="text-sm text-blue-600 hover:underline">Forgot password?</a>
+        </div>
+
+        <button type="submit"
+                class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-lg transition duration-200">
+          Login
+        </button>
+      </form>
+    
+      <div class="signup-link text-center mt-4 text-sm text-gray-700">
+        Don’t have an account? 
+        <a href="signup.html" class="text-blue-600 hover:underline">Sign Up</a>
+      </div> 
+    </div>
+  </main>
+</div>
+</div>
+</body>
+</html>

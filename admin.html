@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Panel - Job Applications</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+  <!-- Header -->
+  <header class="bg-white shadow p-4">
+    <nav class="flex justify-between items-center max-w-7xl mx-auto">
+      <!-- Logo -->
+      <img src="images/job-vacancy-background-flat-style_23-2147871759.jpg" alt="logo"
+           class="w-32 h-32 object-cover rounded-full"/>
+
+      <!-- Navigation Links -->
+      <ul class="flex gap-6 text-gray-700 font-medium">
+        <li><a href="/home.html" class="hover:text-blue-600">Home</a></li>
+        <li><a href="/jobs.html" class="hover:text-blue-600">Jobs</a></li>
+        <li><a href="/apply.html" class="hover:text-blue-600">Apply Now</a></li>
+        <li><a href="/helpcentre.html" class="hover:text-blue-600">Help Centre</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Job Applications Table -->
+  <main class="max-w-7xl mx-auto mt-10 bg-white p-8 rounded shadow">
+    <h2 class="text-2xl font-bold mb-6 text-gray-800">Submitted Job Applications</h2>
+
+    <table class="min-w-full table-auto border-collapse">
+      <thead class="bg-blue-600 text-white">
+        <tr>
+          <th class="px-4 py-2">Full Name</th>
+          <th class="px-4 py-2">Email</th>
+          <th class="px-4 py-2">Phone</th>
+          <th class="px-4 py-2">Position</th>
+          <th class="px-4 py-2">County</th>
+          <th class="px-4 py-2">Resume</th>
+          <th class="px-4 py-2">Cover Letter</th>
+        </tr>
+      </thead>
+      <tbody id="applicationTableBody">
+        <!-- Data rows will be inserted here by JavaScript -->
+      </tbody>
+    </table>
+  </main>
+
+  <script>
+    // Function to display the stored job applications in a table
+    function loadApplications() {
+      const applications = JSON.parse(localStorage.getItem('applications')) || [];
+      const tableBody = document.getElementById('applicationTableBody');
+      
+      // Clear any existing rows
+      tableBody.innerHTML = '';
+
+      // Populate the table with data from localStorage
+      applications.forEach(app => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+          <td class="px-4 py-2 border">${app.fullname}</td>
+          <td class="px-4 py-2 border">${app.email}</td>
+          <td class="px-4 py-2 border">${app.phone}</td>
+          <td class="px-4 py-2 border">${app.position}</td>
+          <td class="px-4 py-2 border">${app.county}</td>
+          <td class="px-4 py-2 border"><a href="${app.resume}" target="_blank" class="text-blue-600">View Resume</a></td>
+          <td class="px-4 py-2 border">${app.coverletter}</td>
+        `;
+        tableBody.appendChild(row);
+      });
+    }
+
+    // Call the loadApplications function on page load
+    window.onload = loadApplications;
+  </script>
+  <script src="Admin.js"></script>
+
+</body>
+</html>

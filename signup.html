@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application - Sign Up</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            box-sizing: border-box;
+            align-items: center;
+        }
+        h2 {
+            grid-column: span 2;
+            text-align: center;
+            color: black;
+        }
+        h5 {
+            grid-column: span 2;
+            text-align: center;
+            color: gray; 
+            padding: 0px;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        input::placeholder {
+            color: transparent;
+        }
+        input:focus::placeholder {
+            color: #999;
+        }
+        button {
+            grid-column: span 2;
+            width: 100%;
+            padding: 10px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: darkgreen;
+        }
+        .login-link {
+            grid-column: span 2;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .login-link a {
+            color: green;
+            text-decoration: none;
+            
+        }
+        
+
+    </style>
+</head>
+
+<body>
+<div>
+
+</div>
+
+<div class="container">
+    <img src="images/job-vacancy-background-flat-style_23-2147871759.jpg" alt="logo" style="width: 100px;height: 100px; justify-content: center; padding-left: 600px;">
+    <h2>Create Your Account</h2>
+    <h5>Join us and explore exciting opportunities!
+
+    </h5>
+   
+    <div>
+        <label for="firstname">First Name</label>
+        <input type="text" id="firstname" name="firstname" required>
+        
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required>
+        
+        <label for="password">Create Password</label>
+        <input type="password" id="password" name="password" required>
+    </div>
+    
+    <div>
+        <label for="lastname">Last Name</label>
+        <input type="text" id="lastname" name="lastname" required>
+        
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required>
+        
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+    </div>
+    
+    <button type="submit">Sign Up</button>
+    
+    <div class="login-link">
+        Already have an account? <a href="login.html">Log In</a>
+    </div>
+</div>
+
+</body>
+</html>
